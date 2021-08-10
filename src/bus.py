@@ -21,7 +21,6 @@ class Bus:
 		self.passengers.clear()
 	
 	def pick_up_from_stop(self, bus_stop):
-		# get people waiting
 		for person in bus_stop.queue:
 			self.pick_up(person)
 		bus_stop.clear()
